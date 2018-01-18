@@ -1,27 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SkinCheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vux-7e-TAg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0W-n9-6Xn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCv-sj-8e0">
+                                <rect key="frame" x="151" y="296" width="72" height="74"/>
+                                <state key="normal" image="focus_square"/>
+                                <connections>
+                                    <action selector="onAddButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="hUt-Mb-9vo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c0W-n9-6Xn" firstAttribute="top" secondItem="Vux-7e-TAg" secondAttribute="top" id="CYZ-3g-Tli"/>
+                            <constraint firstItem="c0W-n9-6Xn" firstAttribute="centerY" secondItem="Vux-7e-TAg" secondAttribute="centerY" id="L9X-f2-7VK"/>
+                            <constraint firstItem="c0W-n9-6Xn" firstAttribute="centerX" secondItem="Vux-7e-TAg" secondAttribute="centerX" id="O0u-SR-G9t"/>
+                            <constraint firstItem="c0W-n9-6Xn" firstAttribute="trailing" secondItem="eV3-oo-kNs" secondAttribute="trailing" id="OCa-9L-0Kd"/>
+                            <constraint firstItem="mCv-sj-8e0" firstAttribute="centerY" secondItem="Vux-7e-TAg" secondAttribute="centerY" id="dCM-bB-vKl"/>
+                            <constraint firstItem="c0W-n9-6Xn" firstAttribute="bottom" secondItem="eV3-oo-kNs" secondAttribute="bottom" id="ic0-yx-sln"/>
+                            <constraint firstItem="c0W-n9-6Xn" firstAttribute="leading" secondItem="eV3-oo-kNs" secondAttribute="leading" id="oul-FE-wwk"/>
+                            <constraint firstItem="mCv-sj-8e0" firstAttribute="centerX" secondItem="Vux-7e-TAg" secondAttribute="centerX" id="xAr-SZ-T6k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eV3-oo-kNs"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="sceneView" destination="c0W-n9-6Xn" id="MjY-F1-M2C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="focus_square" width="72" height="74"/>
+    </resources>
 </document>

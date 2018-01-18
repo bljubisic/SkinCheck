@@ -15,6 +15,7 @@
 		0BB451892010BCA9002B7A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB451872010BCA9002B7A10 /* LaunchScreen.storyboard */; };
 		0BB451942010BCA9002B7A10 /* SkinCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB451932010BCA9002B7A10 /* SkinCheckTests.swift */; };
 		0BB4519F2010BCAA002B7A10 /* SkinCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4519E2010BCAA002B7A10 /* SkinCheckUITests.swift */; };
+		0BB451AD2010CFC4002B7A10 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB451AC2010CFC4002B7A10 /* Plane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0BB4519A2010BCAA002B7A10 /* SkinCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkinCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BB4519E2010BCAA002B7A10 /* SkinCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCheckUITests.swift; sourceTree = "<group>"; };
 		0BB451A02010BCAA002B7A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB451AC2010CFC4002B7A10 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				0BB4517C2010BCA9002B7A10 /* AppDelegate.swift */,
 				0BB4517E2010BCA9002B7A10 /* art.scnassets */,
 				0BB451802010BCA9002B7A10 /* ViewController.swift */,
+				0BB451AC2010CFC4002B7A10 /* Plane.swift */,
 				0BB451822010BCA9002B7A10 /* Main.storyboard */,
 				0BB451852010BCA9002B7A10 /* Assets.xcassets */,
 				0BB451872010BCA9002B7A10 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BB451812010BCA9002B7A10 /* ViewController.swift in Sources */,
+				0BB451AD2010CFC4002B7A10 /* Plane.swift in Sources */,
 				0BB4517D2010BCA9002B7A10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
