@@ -25,7 +25,7 @@ class Plane: SCNNode {
         self.planeGeometry = SCNBox(width: width, height: planeHeight, length: length, chamferRadius: 0)
         
         let transparentMaterial = SCNMaterial()
-        transparentMaterial.diffuse.contents = UIColor.white.withAlphaComponent(0.0)
+        transparentMaterial.diffuse.contents = UIColor.white.withAlphaComponent(0.5)
         
         self.planeGeometry?.materials = [transparentMaterial, transparentMaterial, transparentMaterial, transparentMaterial, transparentMaterial, transparentMaterial]
         
