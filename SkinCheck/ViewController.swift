@@ -30,7 +30,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         self.sceneView.showsStatistics = true
-        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        //self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         
         // Create a new scene
         let scene = SCNScene()
@@ -51,7 +51,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
-        configuration.planeDetection = .vertical
+        configuration.planeDetection = [.vertical, .horizontal]
         
         // Run the view's session
         sceneView.session.run(configuration)
@@ -143,7 +143,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         if let result = results.first {
             let hitPos = self.positionFromTransform(result.worldTransform)
-            
             return hitPos
         }
         return nil
